@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-image: linear-gradient(to bottom, #babeff, #f1ceff,  #f1ceff, #f1ceff, #f1ceff, #babeff);;
+    text-align: center;
+    color: #7a6bb0;
+}
+
+/* HERO */
+
+.hero {
+    padding: 30px 20px 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.teacher-img {
+    width: 360px;
+}
+
+.hero-right h1 {
+    font-size: 64px;
+    color: #FFD839;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 4px 3px 0px #706F7C
+}
+
+.subtitle {
+    color: #DB2AE6;
+    font-size: 18px;
+    margin-top: -3px;
+}
+
+.main-button {
+    display: inline-block;
+    background: #C2BAFF;
+    padding: 18px 80px;
+    color: #FFD6FF;
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin: 20px 0px 5px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FFD6FF;
+    text-decoration: none;
+    background: #C2BAFF;
+    padding: 18px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* VIDEO */
+
+.video-section {
+    margin: 40px 0;
+}
+
+.video-wrapper {
+    width: 640px;
+    max-width: 90%;
+    margin: auto;
+    border: 6px solid #babeff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 360px;
+}
+
+
+/* REVIEWS
+
+TODO: Разобраться со слайдером, щас через жопу работает
+*/
+
+.review-section {
+    padding: 40px 20px;
+}
+
+.review-container {
+    position: relative;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    border: 6px solid #babeff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slides {
+   display: flex;
+   gap: 20px;
+   transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 calc(50%);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #a5a0db;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+}
+
+.left {
+  left: 5px;
+}
+
+.right {
+  right: 5px;
+}
+
+/* CONTACT */
+
+
+
+@media (max-width: 768px) {
+  .hero-right h1 {
+    font-size: 42px;
+  }
+
+  .teacher-img {
+    width: 180px;
+  }
+
+  .slide {
+      flex: 0 0 100%;
+  }
+}
