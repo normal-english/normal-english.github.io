@@ -1,6 +1,6 @@
-body {
+html, body {
     margin: 0;
-    font-family: 'Fredoka', sans-serif;
+    font-family: "Baloo 2", "Nunito", "Quicksand", sans-serif;
     text-align: center;
     color: #7a6bb0;
 
@@ -63,9 +63,10 @@ body::before {
 }
 
 .hero-right h1 {
-    font-size: 64px;
+    font-size: 96px;
     color: #FFD839;
     margin: 0;
+    line-height: 0.8;
     text-transform: uppercase;
     text-shadow: 4px 3px 0px #706F7C
 }
@@ -73,7 +74,8 @@ body::before {
 .subtitle {
     color: #DB2AE6;
     font-size: 18px;
-    margin-top: -3px;
+    margin-top: -5px;
+    font-weight: bold;
 }
 
 .main-button {
@@ -172,6 +174,37 @@ TODO: Разобраться со слайдером, щас через жопу
 
 /* CONTACT */
 
+
+/* HOVER FOR BUTTONS */
+
+.main-button,
+.nav-buttons a,
+.arrow {
+    transition: all 0.25s ease;
+}
+
+.main-button:hover {
+    background: #b39bff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(122, 107, 176, 0.4);
+}
+
+.nav-buttons a:hover {
+    background: #b39bff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(122, 107, 176, 0.35);
+}
+
+.arrow:hover {
+    background: #8f88d8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.main-button:active,
+.nav-buttons a:active {
+    transform: translateY(0px) scale(0.97);
+    box-shadow: none;
+}
 
 
 @media (max-width: 768px) {
